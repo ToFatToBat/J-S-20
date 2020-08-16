@@ -16,14 +16,14 @@
    <div class="form-group row borderLines">
        <label class="col-sm-2 col-form-label">Imie</label>
        <div class="col-10">
-           <input type="text" class="form-control" placeholder="Imie" minlength="3" maxlength="10" required>
+           <input type="text" class="form-control" placeholder="Imie" minlength="3" maxlength="10" required name="firstName">
        </div>
    </div>
 
    <div class="form-group row borderLines">
        <label class="col-sm-2 col-form-label">Nazwisko</label>
        <div class="col-10">
-           <input type="text" class="form-control" placeholder="Nazwisko" minlength="3" maxlength="15" required>
+           <input type="text" class="form-control" placeholder="Nazwisko" minlength="3" maxlength="15" required name="lastName">
        </div>
    </div>
 
@@ -36,41 +36,38 @@
            Mężczyzna <input type="radio" name="sexRadioOption">
        </div>
    </div>
-
-
-
    <div class="form-group row borderLines">
        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
        <div class="col-sm-10">
-           <input type="email" class="form-control" id="inputEmail3" placeholder="name@dot.com" required size="5">
+           <input type="email" class="form-control" id="inputEmail3" placeholder="name@dot.com" required size="5" name="email">
        </div>
    </div>
    <div class="form-group row borderLines">
        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
        <div class="col-sm-10">
-           <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required>
+           <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required name="password">
        </div>
    </div>
 
        <div class="form-row borderLines">
            <div class="col-sm-4">
-               <input type="text" class="form-control" placeholder="Miasto" minlength="5" required>
+               <input type="text" class="form-control" placeholder="Miasto" minlength="5" required name="city">
            </div>
            <div class="col-sm-4">
-               <input type="text" class="form-control" placeholder="Województwo" minlength="5" required>
+               <input type="text" class="form-control" placeholder="Województwo" minlength="5" required name="state">
            </div>
            <div class="col-sm-4">
-               <input type="text" class="form-control" placeholder="kod pocztowy" minlength="5" required>
+               <input type="text" class="form-control" placeholder="kod pocztowy" minlength="5" required name="postalCode">
            </div>
 
        </div>
 
        <div class="form-check borderLines">
-           <input type="checkbox" class="form-check-input " id="exampleCheck1" required>
+           <input type="checkbox" class="form-check-input " id="exampleCheck1" required name="ouwCheckbox">
            <label class="form-check-label" for="exampleCheck1">Akceptuje <a href="https://stacjonarne.javastart.pl/strona/owu"> regulamin</a> </label>
        </div>
        <div class="form-check borderLines">
-           <input type="checkbox" class="form-check-input" id="exampleCheck2" checked>
+           <input type="checkbox" class="form-check-input" id="exampleCheck2" checked name="marketingInfo">
            <label class="form-check-label" for="exampleCheck1" checked>Wyrazam zgode na otrzymywanie informacji marketingowych.</label>
        </div>
        <button type="submit" class="btn btn-primary borderLines">Submit</button>
